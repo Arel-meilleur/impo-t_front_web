@@ -4,11 +4,11 @@
     <v-divider></v-divider>
     <v-container class="mt-5">
       <v-row>
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="4" class="mb-4">
           <v-hover v-slot="{ hover }" open-delay="200">
             <v-card color="cyan darken-1" :elevation="hover ? 16 : 2">
               <v-row>
-                <v-col cols="12" sm="8">
+                <v-col cols="12" sm="8"  >
                   <v-list-item three-line>
                     <v-list-item-content>
                       <div class="mb-4">
@@ -32,7 +32,7 @@
             </v-card>
           </v-hover>
         </v-col>
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="4" class="mb-4">
           <v-hover v-slot="{hover }" open-delay="200">
             <v-card color="pink darken-1" :elevation="hover ? 16 : 2">
               <v-row>
@@ -60,7 +60,7 @@
             </v-card>
           </v-hover>
         </v-col>
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="4" class="mb-4">
           <v-hover v-slot="{ hover }" open-delay="200">
             <v-card color="orange darken-1" :elevation="hover ? 16 :2">
               <v-row>
@@ -90,7 +90,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="6" class="mb-4">
           <v-card>
             <v-app-bar flat color="rgba(0,0,0,0)">
               <v-toolbar-title class="title black--text pl-0 ml-2">
@@ -145,8 +145,8 @@
             </v-app-bar>
           </v-card>
         </v-col>
-        <v-col cols="12" sm="6">
-          <v-card height="180px">
+        <v-col cols="12" sm="6" class="pb-8 mb-8">
+          <v-card height="200px">
             <v-row>
               <v-col cols="12" sm="4">
                 <v-list-item three-line>
@@ -159,7 +159,7 @@
                   </v-list-item-content>
                 </v-list-item>
               </v-col>
-              <v-col cols="12" sm="8">
+              <v-col cols="12" sm="8" class="mb-8">
                 <v-sparkline
                 :value="value"
                 :smooth="radius || false"
@@ -186,7 +186,7 @@
         <v-col cols="12" sm="6">
           <v-card>
             <v-row>
-              <v-col cols="12" sm="6" class="border">
+              <v-col cols="12" sm="6" class="border mb-4">
                 <v-list-item three-line>
                   <v-list-item-content>
                     <div class="mb-4">Taux d'entreprises en règle</div>
