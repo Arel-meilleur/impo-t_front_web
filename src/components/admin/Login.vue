@@ -58,8 +58,8 @@ export default {
    data: () => ({
     step: 1,
     form: {
-            email: '',
-            password: ''
+            email: 'admin@admin.com',
+            password: 'admin'
           },
     form2:{
             name  : null,
