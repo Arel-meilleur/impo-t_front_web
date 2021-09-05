@@ -1,16 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Doculentation from '../components/AppDocumentation'
-import Presentation from '../views/Presentation.vue'
+// import Presentation from '../views/Presentation.vue'
 // import Home from '../views/admin/Home.vue'
 import Dashbord from '../views/admin/Dashbord.vue'
 import Administration from '../views/admin/administrations/Administration.vue'
 import CreateAdministration from '../views/admin/administrations/Creer.vue'
 import About from '../views/admin/About.vue'
 import Settings from '../views/admin/Settings.vue'
-import LoginContribuable from '../components/contribuable/login.vue'
+// import LoginContribuable from '../components/contribuable/login.vue'
 import LoginAdmin from '../components/admin/Login.vue'
 import AdminProfile from '../components/admin/Profiles.vue'
+import Single from '../views/admin/administrations/Single.vue'
 
 Vue.use(VueRouter)
 
@@ -21,11 +22,12 @@ const routes = [
   { path: '/dashbord', name:Dashbord, component: Dashbord },
   { path: '/administration', name:Administration, component: Administration },
   { path: '/administration/create', name:CreateAdministration, component: CreateAdministration },
-  { path: '/admin/login', name:LoginAdmin, component: LoginAdmin },
+  { path: '/', name:LoginAdmin, component: LoginAdmin },
   { path: '/about', name:About, component: About },
   { path: '/paramettres', name:Settings, component: Settings },
-  { path: '/', component: Presentation },
-  { path: '/contribuable/login', component: LoginContribuable },
+  { path: '/administrations/administration', name:Single, component: Single },
+  // { path: '/', component: Presentation },
+  // { path: '/contribuable/login', component: LoginContribuable },
 ]
 
 const router = new VueRouter({
